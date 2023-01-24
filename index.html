@@ -1,42 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
-
-<link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
-<title>The Super Mario Bros. Movie | Universal Pictures</title>
-</head>
-
-<body>
-    <div>
-        <video class="video" autoplay loop muted>
-            <source src="./src/video-mario.mp4">            
-        </video>
-    </div>
-    <header class="head">
-        <a>
-            <img src="./src/img/logo-chapeu-mario.png" alt="logo image">
-        </a>
-        <nav>
-            <ul class="manu">
-                <li>Home</li>
-                <li>Details</li>
-            </ul>
-        </nav>
-    </header>
-    <main class="container">
-        <div class="informations">
-            <img src="./src/img/titulo.png" alt="title image">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores cum dolores commodi perferendis reprehenderit et ab doloremque illo sed aliquid, dolore quasi sapiente, assumenda aut inventore numquam temporibus placeat excepturi?</p>
-            <button>Watch the trailer</button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./src/imagens/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./resposive.css">
+        <title>Super Mario Bros - O Filme</title>
+    </head>
+    
+    <body>
+        <div class="fundo-video">
+            <video class="video" autoplay loop muted>
+                <source src="./src/video-mario.mp4" type="video/mp4" />
+            </video>
         </div>
-        <img class="mario" src="./src/img/super-mario-chars.png" alt="main mario image">
-    </main>
-</body>
-</html>
+    
+        <header class="cabecalho">
+            <a>
+                <img class="logo" src="./src/img/logo-chapeu-mario.png" alt="logo de chapéu do Mario" />
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./details.html">Detalhes</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+            <div class="informacoes">
+                <img class="imagem-titulo" src="./src/img/titulo.png" alt="imagem do título do filme" />
+                <p class="descricao">Mario e seu irmão Luigi são encanadores. Um dia, eles vão parar no reino dos
+                    cogumelos, um reino mágico governado pela Princesa Peach, mas ameaçado por Bowser, o rei dos Koopas, que faz de tudo
+                    para conseguir reinar em todos os lugares, será que os irmãos Mario vão conseguir impedir esta ameaça?</p>
+                <button class="botao-trailer">Veja o trailer</button>
+            </div>
+            <img class="mario" src="./src/img/super-mario-chars.png" alt="personagens da franquia Mario" />
+    
+    
+            <div class="popup">
+                <div class="content-popup">
+                    <span class="close-popup"> X </span>
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Cb4WV4aXBpk"
+                        title="Trailer oficial dublado" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+    
+        </main>
+    
+        <script src="./src/index.js"></script>
+    </body>
+    
+    </html>
