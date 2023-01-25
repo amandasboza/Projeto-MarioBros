@@ -1,6 +1,6 @@
 body {
-    font-family: 'Poppins';
-}
+    font-family: 'Crete Round', serif;
+    text-align: justify;}
 
 .fundo-video {
 
@@ -28,12 +28,11 @@ body {
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
 
 }
-
 .cabecalho {
     display: flex;
     justify-content: space-between;
-    padding: 30px;
-    max-width: 1440px;
+    padding: 60px 130px 5px 130px;
+    /* max-width: 1440px; */
     margin: 0 auto;
 }
 
@@ -51,10 +50,14 @@ body {
 .menu a {
     font-weight: bold;
     color: #FFFFFF;
-    font-size: 25px;
-    padding: 10px 20px;
-    border-radius: 50px;
+    font-size: 22px;
+    padding: 20px 30px;
+    border-radius: 25px;
     transition: 300ms;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-right: 25px;
+    margin-left: 5px;
 }
 
 .menu a:hover {
@@ -63,34 +66,69 @@ body {
 
 main {
 
-    background-color: #d5011d;
-    width: 800px;
+    background-color: #d5011dc2;
+    width: 900px;
     margin: 60px auto;
-    height: 400px;
+    height: 600px;
     border-radius: 30px;
     align-items: center;
-
 }
 
+
+main ul {
+    display: flex;
+    margin: 12px 50px 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.icons {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons img {
+   width: 55px;
+}
+
+main li {
+    margin: 0 50px;
+    gap: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    list-style-type: none;
+}
 main h1 {
 
     text-align: center;
-    padding: 20px;
+    padding: 50px 35px 20px;
     color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
 
+main h2 {
+    text-transform: uppercase;
+}
+
+.jupert {
+    margin-top: 25px;
 }
 
 main p {
-    padding: 10px 0 0 0;
-    text-align: center;
+    padding: 10px 30px 15px;
+    text-align: justify;
     color: #ffffff;
     margin: 0 20px;
-    font-size: 16px;
-
+    font-size: 20px;
 }
 
 main a {
-    color: black;
+    color:black;
     font-weight: bold;
 }
 
@@ -100,20 +138,13 @@ main a:hover {
 }
 
 main a:active {
-    color: orange;
+    color: rgb(255, 60, 0);
 }
 
 main h2 {
     text-align: center;
     padding: 10px;
     color: #ffffff;
-}
-
-main ul {
-    display: flex;
-    margin: 0 310px;
-    gap: 20px;
-
 }
 
 main img {

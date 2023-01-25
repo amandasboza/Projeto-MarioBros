@@ -13,7 +13,6 @@ function alternar () {
 botaoTrailer.addEventListener("click", () => {
     alternar(); 
     video.setAttribute("src", linkVideo) 
-   
 });
 
 
